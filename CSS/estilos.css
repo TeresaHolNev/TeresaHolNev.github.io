@@ -395,6 +395,10 @@ a.activo{
 
 @media(max-width:860px){
 
+    .hero{
+        background-attachment: initial;
+    }
+
     .hero h1{
         font-size:35px; 
     }
@@ -405,6 +409,10 @@ a.activo{
 }
 
 @media(max-width:720px){
+
+    .hero{
+        background-attachment: initial;
+    }
 
     .burger{
         display: initial;
@@ -438,6 +446,10 @@ a.activo{
 
 @media(max-width:685px){
 
+    .hero{
+        background-attachment: initial;
+    }
+
     .hero h1{
         font-size:30px; 
     }
@@ -459,6 +471,10 @@ a.activo{
 
 @media(max-width:540px){
 
+    .hero{
+        background-attachment: initial;
+    }
+
     .hero h1{
         font-size:25px; 
     }
@@ -479,6 +495,10 @@ a.activo{
 }
 
 @media(max-width:420px){
+
+    .hero{
+        background-attachment: initial;
+    }
 
     .fila{
         margin:20px 0px 20px 0px;
