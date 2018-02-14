@@ -380,6 +380,10 @@ a.activo{
 
 @media(max-width:990px){
 
+    .hero{
+        background-attachment: initial;
+    }
+
     .hero h1{
         font-size:35px; 
     }
