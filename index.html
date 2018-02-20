@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./JS/Librerías/jquery-3.3.1.js"></script>
+    <script src="./JS/main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,15 +18,27 @@
     <meta name="theme-color" content="#ffffff">
     <title>Inicio</title>
 </head>
-<body>
+<body id="top">
     <header>
+        <!-- Botón haburguesa -->
         <p class="burger">&#9776;</p>
-        <a href="/">
+        <!-- Menú de la hamburguesa -->
+        <div class="menu">
+        <!-- Botón de cierre -->
+            <p class="cerrar">&#x2715</p>
+            <ul>
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="./alquiler.html">Alquiler</a>
+                <a href="./venta.html">Ventas</a>
+                <a href="./contactos.html">Contactos</a>
+            </ul>
+        </div>
+        <a href="index.html">
             <i class="fas fa-desktop"></i>
         </a>
         <nav>
             <ul>
-                <li> <a href="/" class="activo">Inicio</a></li>
+                <li> <a href="index.html" class="activo">Inicio</a></li>
                 <li> <a href="./alquiler.html">Alquiler</a></li>
                 <li> <a href="./venta.html">Ventas</a></li>
                 <li> <a href="./contactos.html">Contacto</a></li>
@@ -88,21 +102,21 @@
         <div class="col1">
             <div class="imagen1 centrado">
                 <a href="./venta.html">
-                <img src="./Img/sevende.jpg" alt="#">
+                <img src="./Img/sevende.jpg" alt="./venta.html">
                 </a>
             </div>
         </div>
         <div class="col2">
             <div class="imagen2 centrado">
                 <a href="./alquiler.html">
-                <img src="./Img/alquiler.jpg" alt="#">
+                <img src="./Img/alquiler.jpg" alt="./alquiler.html">
                 </a>
             </div>
         </div>    
     </div>
     </form>
     <footer>
-            <a href="#" class="top">
+            <a href="#top" class="top">
                 <i class="fas fa-chevron-circle-up"></i>
             </a>
             <div class="izdo">
@@ -113,7 +127,7 @@
                 <p><i class="fas fa-envelope"></i> info@acm.com</p>
             </div>
             <div class="centro">
-                <a href="/" class="activo" >Inicio</a>
+                <a href="index.html" class="activo" >Inicio</a>
                 <a href="./alquiler.html">Alquiler</a>
                 <a href="./venta.html">Venta</a>
                 <a href="./contactos.html">Contactos</a>

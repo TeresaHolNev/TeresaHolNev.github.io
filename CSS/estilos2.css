@@ -13,7 +13,7 @@ body{
 /*Cabecera*/
 
 header{
-    position: absolute;
+    position: fixed;
     top:0;
     width: 100%;
     height: 100px;
@@ -21,7 +21,10 @@ header{
     justify-content: space-between;
     align-items: center;
     /* padding: 0 20px; */
+    box-shadow: 0px 4px 4px rgba(89, 89, 236, 0.246);
     background-color: rgba(0, 0, 139, 0.219);
+    z-index: 5;
+    transition: all 300ms;
 }
 
 .burger{
@@ -65,6 +68,8 @@ header nav ul{
 
 header nav ul a{
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav ul li{
@@ -87,6 +92,90 @@ header nav ul li{
 
 .breadcrumbs a{
     color: darkblue;
+}
+
+/* Menú hamburguesa páginas normales */
+.burger2{
+    display: none;
+    padding-left: 10px;
+}
+
+.burger2 .barra{
+    height: 4px;
+    width: 36px;
+    margin: 6px auto;
+    background-color: darkblue;
+}
+
+.arriba, .media, .abajo{
+    transition: all 700ms ease;
+}
+
+.burger2.abierto .arriba{
+    transform: translateY(10px) rotateZ(45deg);
+}
+
+.burger2.abierto .media{
+    width: 0;
+}
+
+.burger2.abierto .abajo{
+    transform: translateY(-10px) rotateZ(-45deg);
+}
+
+.menu2{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 80%;
+    height: calc(100vh - 105px);
+    background-color: rgba(0, 0, 139, 0.356);
+    z-index: 10;
+    display: none;
+    box-shadow:0px 4px 4px darkblue;
+    margin-top: 5px;
+}
+
+.menu2 ul{
+    display:flex;
+    flex-direction: column;
+}
+
+.menu2 ul a{
+    width: 100%;
+    padding: 10px 20px;
+    transform: translateX(-200px);
+}
+
+.menu2 ul a:nth-child(1){
+    transition: transform 600ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(2){
+    transition: transform 800ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(3){
+    transition: transform 1000ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(4){
+    transition: transform 1300ms ease-in-out;
+}
+
+.menu2 ul a:nth-child(5){
+    transition: transform 1500ms ease-in-out;
+}
+
+.menu2 ul a.aparicion{
+    transform: translateX(0px);
+}
+.menu2 ul a:hover{
+    background-color:  rgba(0, 0, 139, 0.356);
+}
+
+.menu2 ul a.activo{
+    background-color:  rgba(0, 0, 139, 0.356);
 }
 
 
@@ -421,7 +510,7 @@ a.activo{
 
 @media(max-width:720px){
 
-    .burger{
+    .burger, .burger2{
         display: initial;
     }
 
@@ -468,6 +557,8 @@ a.activo{
 }
 
 @media(max-width:685px){
+
+
 
     .contenedor{
         margin-left: 175px;

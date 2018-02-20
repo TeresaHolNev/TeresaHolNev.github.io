@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./CSS/estilos2.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./JS/Librerías/jquery-3.3.1.js"></script>
+    <script src="./JS/main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,13 +20,27 @@
 </head>
 <body>
     <header>
-        <p class="burger">&#9776;</p>
-        <a href="/">
+        <!-- Botón menú hamburguesa -->
+        <div class="burger2">
+                <div class="barra arriba"></div>
+                <div class="barra media"></div>
+                <div class="barra abajo"></div>
+        </div>     
+            <!-- Menú hamburguesa  -->
+        <div class="menu2">      
+            <ul>
+                <a href="index.html">Inicio</a>
+                <a href="./alquiler.html"class="activo">Alquiler</a>
+                <a href="./venta.html">Venta</a>
+                <a href="./contactos.html">Contactos</a>
+            </ul>
+        </div>
+        <a href="index.html">
             <i class="fas fa-desktop"></i>
         </a>
         <nav>
             <ul>
-                <li> <a href="/">Inicio</a></li>
+                <li> <a href="index.html">Inicio</a></li>
                 <li> <a href="./alquiler.html" class="activo">Alquiler</a></li>
                 <li> <a href="./venta.html">Venta</a></li>
                 <li> <a href="./contactos.html">Contactos</a></li>
@@ -137,7 +153,7 @@
             <p><i class="fas fa-envelope"></i> info@acm.com</p>
         </div>
         <div class="centro">
-            <a href="/">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="./alquiler.html"class="activo">Alquiler</a>
             <a href="./venta.html">Venta</a>
             <a href="./contactos.html">Contactos</a>
