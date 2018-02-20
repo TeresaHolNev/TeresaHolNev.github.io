@@ -10,6 +10,12 @@ body{
     background-color: rgba(255, 228, 196, 0.349);
 }
 
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Cabecera*/
 
 header{
@@ -178,6 +184,49 @@ header nav ul li{
     background-color:  rgba(0, 0, 139, 0.356);
 }
 
+/*Estilos para página mapa con overlay*/
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.698);
+    opacity: 0;
+    z-index: -1;
+    transition: all 500ms ease;
+}
+
+.overlay.visible{
+    opacity: 1;
+    z-index: 9;
+}
+
+.modal{
+    position: fixed;                    /*Respecto al viewport*/
+    top: 50%;                           /*En el elemento en el que está*/
+    left: 50%;
+    transform: translate(-50%,-50%);    /*sobre el propio elemento*/
+    width: 80%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.400);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+    background-color: white;
+}
+
+.modal.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-header{
+    font-size: 30px;
+    padding: 15px;
+    color: crimson;
+}
 
 /*Tarjetas*/
 

@@ -22,4 +22,11 @@ $("a").on("click", function(){
         },800);
     }
     });
+    //Ventana modal
+    $("#open").click(function(){
+        $(".modal, .overlay").addClass("visible");
+    });
+    $("#close, .overlay").click(function(){
+        $(".modal, .overlay").removeClass("visible");
+    });
 });
