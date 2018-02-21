@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Nerja(San Juan de Capistrano)</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!-- Botón menú hamburguesa -->
         <div class="burger2">
@@ -110,9 +110,19 @@
         <img src="./Img/alquiler/Nerja(San Juan de Capistrano)/8.jpg" alt="">
         <img src="./Img/alquiler/Nerja(San Juan de Capistrano)/9.jpg" alt="">
     </div>
-    <div class="mapa">
+    <div class="fila">
+        <div class="overlay"></div>
+        <h3>Vea Su Localizacón</h3>
+        <button class="btn" id="open">Ver localización</button>
+        <div class="modal">
+            <p class="modal-header"><i class="fas fa-street-view"></i></p>
+            <hr>
+            <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102246.44178705623!2d-3.9097803205205963!3d36.78972356832747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7224140ee51c49%3A0x403d278a576e700!2zTmVyamEsIE3DoWxhZ2E!5e0!3m2!1ses!2ses!4v1518519545090" 
             width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br>
+            <button class="btn" id="close">Volver</button>
+        </div>
     </div>
     <div class="datos">
         <a href="#" class="btn">Reservar</a>
@@ -135,7 +145,7 @@
                 </div>
         </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="fas fa-chevron-circle-up"></i>
         </a>
         <div class="izdo">

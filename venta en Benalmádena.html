@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Villa independiente en venta en Benalmádena</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!-- Botón menú hamburguesa -->
         <div class="burger2">
@@ -50,7 +50,7 @@
     <div class="breadcrumbs primera">
         <a href="./index.html">Inicio</a>
         <i class="fas fa-angle-right"></i>
-        <a href="./alquiler.html">Venta</a>
+        <a href="./venta.html">Venta</a>
         <i class="fas fa-angle-right"></i>
         <span>Villa independiente en venta en Benalmádena</span>
     </div>
@@ -81,9 +81,18 @@
         <img src="./Img/venta/Villa independiente en venta en Benalmádena/7.jpg" alt="#">
         <img src="./Img/venta/Villa independiente en venta en Benalmádena/8.jpg" alt="#">
     </div>
-    <div class="mapa">
+    <div class="fila">
+        <div class="overlay"></div>
+        <h3>Vea Su Localizacón</h3>
+        <button class="btn" id="open">Ver localización</button>
+        <div class="modal">
+            <p class="modal-header"><i class="fas fa-street-view"></i></p>
+            <hr>
+            <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60955.99708521883!2d-4.586296857486013!3d36.58773633314384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fcb76005e23f%3A0xcf24f3c3adf501a!2zQmVuYWxtw6FkZW5hLCBNw6FsYWdh!5e0!3m2!1ses!2ses!4v1518614047103" 
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button class="btn" id="close">Volver</button>
+        </div>
     </div>
     <div class="datos">
         <a href="#" class="btn">Reservar</a>
@@ -106,7 +115,7 @@
             </div>
     </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="fas fa-chevron-circle-up"></i>
         </a>
         <div class="izdo">

@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Contacto</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!-- Botón haburguesa -->
         <p class="burger">&#9776;</p>
@@ -83,9 +83,20 @@
                 <i class="fas fa-envelope"></i> info@acm.com
             </p>
         </div>
-        <div class="col2">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15238.09829209843!2d-4.546768363747762!3d36.592299418556436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fcbd28f8eafb%3A0x9556e5c62fbcc55a!2sCalle+Esmeraldas%2C+2%2C+29631+Benalm%C3%A1dena%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518422428385" 
-            width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="col50">
+            <img src="./Img/localizacion.PNG" alt="">
+            <div class="overlay"></div>
+            <button class="btn" id="open">Ver localización</button>
+            <div class="modal">
+                <p class="modal-header"><i class="fas fa-street-view"></i></p>
+                <hr>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12841.526307957332!2d-5.158819263661008!3d36.424154980442246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cd6a591f6d9d3%3A0x8a4bf0c5d62d0dcc!2s29680+Estepona%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518513688698" 
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <hr>
+                <br>
+                <button class="btn" id="close">Volver</button>
+            </div>
         </div>
     </div>
     <div class="fila">
@@ -223,7 +234,7 @@
         </div>
     </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="fas fa-chevron-circle-up"></i>
         </a>
         <div class="izdo">

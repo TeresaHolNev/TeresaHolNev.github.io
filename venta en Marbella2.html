@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Villa independiente en venta en Marbella</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!-- Botón menú hamburguesa -->
         <div class="burger2">
@@ -50,7 +50,7 @@
     <div class="breadcrumbs primera">
         <a href="./index.html">Inicio</a>
         <i class="fas fa-angle-right"></i>
-        <a href="./alquiler.html">Venta</a>
+        <a href="./venta.html">Venta</a>
         <i class="fas fa-angle-right"></i>
         <span>Villa independiente en venta en Marbella</span>
     </div>
@@ -59,23 +59,23 @@
     <p class="texto">Villa contemporánea de 5 camas en un exclusivo complejo cerrado de sólo 14 unidades de lujo.
             En términos de potencial de inversión, factor de 'wow' y calidad de vida, no mejora.
             La villa ha sido diseñada para la vida moderna:.
-            • Tiene una superficie total construida de 569 m2, así como terrazas que ascienden a 234 m2 !!!.
-            • También cuenta con una piscina privada de 59 m2.
-            • Incorpora los últimos materiales y tecnologías de construcción (calefacción por suelo radiante,
+            Tiene una superficie total construida de 569 m2, así como terrazas que ascienden a 234 m2 !!!.
+            También cuenta con una piscina privada de 59 m2.
+            Incorpora los últimos materiales y tecnologías de construcción (calefacción por suelo radiante,
             ventanas acústicas / energéticamente acristaladas de doble acristalamiento, climatización individual 
             fría / caliente, etc. ).
-            • La disposición interna es espaciosa y las amplias ventanas de vidrio permiten vistas panorámicas asombrosas 
+            La disposición interna es espaciosa y las amplias ventanas de vidrio permiten vistas panorámicas asombrosas 
             y la integración perfecta entre las áreas internas y externas.
-            • El área del patio está cubierta, lo que permite una zona sombreada protegida contra el sol y los elementos.
-            • La belleza de la piscina infinita se puede disfrutar tanto desde el interior y el exterior de la propiedad.
-            • El solarium se puede utilizar para organizar fiestas o como un espacio privado para relajarse y disfrutar de 
+            El área del patio está cubierta, lo que permite una zona sombreada protegida contra el sol y los elementos.
+            La belleza de la piscina infinita se puede disfrutar tanto desde el interior y el exterior de la propiedad.
+            El solarium se puede utilizar para organizar fiestas o como un espacio privado para relajarse y disfrutar de 
             vistas panorámicas ininterrumpidas.
-            • El diseño es adaptable y es posible instalar un spa, cine en casa, gimnasio, barbacoa y zona de jacuzzi.
-            • La piscina infinita cuenta con un sistema de purificación totalmente instalado.
-            • Los jardines son cerrados, ajardinados y vienen con sistemas de riego inteligentes e iluminación externa.
-            • El complejo es seguro y totalmente cerrado. El acceso es a través de un video-teléfono y villas vienen con 
+            El diseño es adaptable y es posible instalar un spa, cine en casa, gimnasio, barbacoa y zona de jacuzzi.
+            La piscina infinita cuenta con un sistema de purificación totalmente instalado.
+            Los jardines son cerrados, ajardinados y vienen con sistemas de riego inteligentes e iluminación externa.
+            El complejo es seguro y totalmente cerrado. El acceso es a través de un video-teléfono y villas vienen con 
             un sistema de alarma integrado.
-            • Zona privada de aparcamiento cerrado para dos vehículos grandes y zona de aparcamiento para los huéspedes.
+            Zona privada de aparcamiento cerrado para dos vehículos grandes y zona de aparcamiento para los huéspedes.
             Póngase en contacto con nosotros para obtener más información o para concertar una visita.</p>
     <ul> 
         <li>5 dormitorios</li>
@@ -95,9 +95,18 @@
         <img src="./Img/venta/Villa independiente en venta en Marbella/4.jpg" alt="#">
         <img src="./Img/venta/Villa independiente en venta en Marbella/5.jpg" alt="#">
     </div>
-    <div class="mapa">
+    <div class="fila">
+        <div class="overlay"></div>
+        <h3>Vea Su Localizacón</h3>
+        <button class="btn" id="open">Ver localización</button>
+        <div class="modal">
+            <p class="modal-header"><i class="fas fa-street-view"></i></p>
+            <hr>
+            <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60955.99708521883!2d-4.586296857486013!3d36.58773633314384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fcb76005e23f%3A0xcf24f3c3adf501a!2zQmVuYWxtw6FkZW5hLCBNw6FsYWdh!5e0!3m2!1ses!2ses!4v1518614047103" 
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button class="btn" id="close">Volver</button>
+        </div>
     </div>
     <div class="datos">
         <a href="#" class="btn">Reservar</a>
@@ -120,7 +129,7 @@
             </div>
     </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="fas fa-chevron-circle-up"></i>
         </a>
         <div class="izdo">

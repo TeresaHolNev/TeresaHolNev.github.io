@@ -330,13 +330,6 @@ h3{
     text-align: justify;
 }
 
-.mapa{
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
 .detalles img{
     box-shadow: 4px 4px 8px darkblue;
     margin: 10px;
@@ -354,6 +347,21 @@ h3{
     text-align: center;
 }
 
+.top{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);/*La mitad del ancho del elemento(al estar expresado en %)*/
+    font-size: 30px;
+    color: darkblue; 
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
 
 /*Footer*/
 
@@ -607,20 +615,14 @@ a.activo{
 
 @media(max-width:685px){
 
-
-
     .contenedor{
         margin-left: 175px;
     }
 
     .detalles img{
-        /* width:200px;
-        height: 100px; */
         margin-left: 250px;
     }
     .detalles2 img{
-        /* width:200px;
-        height: 100px; */
         margin-left: 250px;
     }
 
@@ -630,6 +632,24 @@ a.activo{
 
     .hero h2{
         font-size:22px;
+    }
+}
+
+@media(max-width:580px){
+    .detalles img{
+        margin-left: 200px;
+    }
+    .detalles2 img{
+        margin-left: 200px;
+    }
+}
+
+@media(max-width:490px){
+    .detalles img{
+        margin-left: 180px;
+    }
+    .detalles2 img{
+        margin-left: 180px;
     }
 }
 
@@ -678,5 +698,18 @@ a.activo{
 
     .col1 .col2{
         width: 100%;
+    }
+}
+
+@media(max-width:370px){
+    .detalles img{
+        width:200px;
+        height: 100px;
+        margin-left: 40px;
+    }
+    .detalles2 img{
+        width:200px;
+        height: 100px;
+        margin-left: 40px;
     }
 }

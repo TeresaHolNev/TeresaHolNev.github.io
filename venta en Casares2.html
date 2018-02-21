@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Villa en venta en Casares 2</title>
 </head>
-<body>
+<body id="top">
     <header>
         <!-- Botón menú hamburguesa -->
         <div class="burger2">
@@ -50,7 +50,7 @@
     <div class="breadcrumbs primera">
         <a href="./index.html">Inicio</a>
         <i class="fas fa-angle-right"></i>
-        <a href="./alquiler.html">Venta</a>
+        <a href="./venta.html">Venta</a>
         <i class="fas fa-angle-right"></i>
         <span>Villa en venta en Casares 2</span>
     </div>
@@ -93,11 +93,19 @@
         <img src="./Img/venta/Villa en venta en Casares2/6.jpg" alt="#">
         <img src="./Img/venta/Villa en venta en Casares2/7.jpg" alt="#">
         <img src="./Img/venta/Villa en venta en Casares2/8.jpg" alt="#">
-
     </div>
-    <div class="mapa">
+    <div class="fila">
+        <div class="overlay"></div>
+        <h3>Vea Su Localizacón</h3>
+        <button class="btn" id="open">Ver localización</button>
+        <div class="modal">
+            <p class="modal-header"><i class="fas fa-street-view"></i></p>
+            <hr>
+            <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25678.171209457985!2d-5.2899895504447185!3d36.438909977659335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cd9014e5a8eb7%3A0xbcbfd387f8fc960a!2s29690+Casares%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518612040567" 
             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button class="btn" id="close">Volver</button>
+        </div>
     </div>
     <div class="datos">
         <a href="#" class="btn">Reservar</a>
@@ -120,7 +128,7 @@
             </div>
     </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="fas fa-chevron-circle-up"></i>
         </a>
         <div class="izdo">

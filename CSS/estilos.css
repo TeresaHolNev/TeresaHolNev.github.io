@@ -159,6 +159,13 @@ h2{
     padding: 5px;
 }
 
+.col50{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    width: 50%;
+}
+
 .centrado{
     display: flex;
     justify-content: center;
@@ -166,7 +173,7 @@ h2{
 }
 
 img{
-    display: 100%;
+    width: 100%;
 }
 
 h4{
@@ -349,7 +356,7 @@ h4{
 }
 
 .miniform input{
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 10px;
 }
 
@@ -359,7 +366,6 @@ input:focus{
 
 .miniform p{
     padding: 10px;
-    font-size: 25px;
 }
 
  /*Footer*/
@@ -528,10 +534,6 @@ a.activo{
         font-size:30px;
     }
 
-    .viñetas{
-        font-size: 15px;
-    }
-
     .direccion{
         font-size: 15px;
     }
@@ -571,7 +573,13 @@ a.activo{
     }
 }
 
-@media(max-width:540px){
+@media(max-width:600px){
+    .hero h1{
+        font-size:28px; 
+    }
+}
+
+@media(max-width:550px){
 
     .hero{
         background-attachment: initial;
@@ -596,6 +604,12 @@ a.activo{
     }
 }
 
+@media(max-width:500px){
+    .hero h1{
+        font-size:20px; 
+    }
+}
+
 @media(max-width:420px){
 
     .hero{
@@ -613,6 +627,10 @@ a.activo{
 
     .hero h2{
         font-size:10px;
+    }
+
+    .col1 li{
+        font-size: 10px;
     }
 
     .direccion{
@@ -656,6 +674,18 @@ a.activo{
 
     .col1 .col2{
         width: 100%;
+    }
+}
+
+@media(max-width:300px){
+    .col1 img{
+        width: 200px;
+        height: 100px;
+    }
+
+    .col2 img{
+        width: 200px;
+        height: 100px;
     }
 }
 
