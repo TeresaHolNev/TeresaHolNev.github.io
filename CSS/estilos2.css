@@ -554,18 +554,13 @@ a.activo{
 
 @media(max-width:860px){
 
-    .detalles img{
-        width:200px;
-        height: 100px;
+    .contenedor{
+        padding-left: 250px;
     }
-    .detalles2 img{
-        width:200px;
-        height: 100px;
-        margin-left: 100px;
-    }
+
 }
 
-@media(max-width:720px){
+@media(max-width:750px){
 
     .burger, .burger2{
         display: initial;
@@ -613,10 +608,18 @@ a.activo{
     }
 }
 
-@media(max-width:685px){
+@media(max-width:860px){
 
     .contenedor{
-        margin-left: 175px;
+        padding-left: 250px;
+    }
+
+}
+
+@media(max-width:680px){
+
+    .contenedor{
+        padding-left: 175px;
     }
 
     .detalles img{
@@ -636,6 +639,10 @@ a.activo{
 }
 
 @media(max-width:580px){
+
+    .contenedor{
+        padding-left: 125px;
+    }
     .detalles img{
         margin-left: 200px;
     }
@@ -645,6 +652,10 @@ a.activo{
 }
 
 @media(max-width:490px){
+
+    .contenedor{
+        padding-left: 100px;
+    }
     .detalles img{
         margin-left: 180px;
     }
@@ -653,10 +664,17 @@ a.activo{
     }
 }
 
+@media(max-width:450px){
+
+    .contenedor{
+        padding-left: 80px;
+    }
+}
+
 @media(max-width:420px){
 
     .contenedor{
-        margin: 40px;
+        padding-left: 50px;
     }
 
     .descripcion {
@@ -701,7 +719,18 @@ a.activo{
     }
 }
 
+@media(max-width:395px){
+
+    .contenedor{
+        padding-left: 20px;
+    }
+}
+
 @media(max-width:370px){
+
+    .contenedor{
+        padding-left: 50px;
+    }
     .detalles img{
         width:200px;
         height: 100px;

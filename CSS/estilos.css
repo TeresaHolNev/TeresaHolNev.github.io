@@ -548,7 +548,7 @@ a.activo{
     }
 }
 
-@media(max-width:685px){
+@media(max-width:695px){
 
     .hero{
         background-attachment: initial;
@@ -579,7 +579,7 @@ a.activo{
     }
 }
 
-@media(max-width:550px){
+@media(max-width:560px){
 
     .hero{
         background-attachment: initial;
